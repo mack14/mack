@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.section {
+  padding-top: 100px 500px;
+}
+.container {
+  max-height: 90vh;
+  width: 78vh;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.container .content {
+  background-color: hsl(0, 0%, 100%);
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+h6 {
+  color: gray;
+  font-family: "Montserrat";
+}
+h3 {
+  padding-right: 5px;
+  font-family: "fraunces";
+  font-size: 20px;
+  padding-top: 10px;
+}
+.content > p {
+  font-size: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  color: gray;
+}
+.price {
+  font-size: 10px;
+  padding-top: 20px;
+  display: flex;
+}
+.price .newprice {
+  color: hsl(158, 36%, 37%);
+}
+.price .oldprice {
+  align-self: center;
+  margin-left: 10px;
+  text-decoration: line-through grey;
+}
+.card {
+  margin-top: 20px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 4px;
+  min-width: 127px;
+  max-height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card > p {
+  color: hsl(0, 0%, 100%);
+  padding-left: 8px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+.card > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    margin-left: 2px;
+  }
+  .container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .section > img {
+    width: 100%;
+    border-top-left-radius: 2px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .content > p {
+    padding-right: 9px;
+    font-size: 10px;
+  }
+  .price {
+    font-size: 15px;
+  }
+  .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 40px;
+    max-height: 40px;
+  }
+  .card > p {
+    padding-top: 6px;
+    font-size: 16px;
+  }
+  .card > img {
+    width: 20px;
+    height: 20px;
+  }
+}
